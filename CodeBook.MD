@@ -39,7 +39,7 @@ Notes:
 
 The script `run_analysis.R` performs the 5 steps described in the course project's definition.
 
-##### Step 1 - Merge the training and the test sets to create one data set
+###### Step 1 - Merge the training and the test sets to create one data set
 
 Read into tables the data located in these files:
 - features.txt
@@ -53,21 +53,20 @@ Read into tables the data located in these files:
 
 Then assign column names and merge to create one data set.
 
-##### Step 2 - Extract only the measurements on the mean and standard deviation for each measurement
+###### Step 2 - Extract only the measurements on the mean and standard deviation for each measurement
 
 Only those columns with the mean and standard deviation measures are taken from the whole dataset.
 So subset the data to keep only the necessary columns: ID, mean and stdev columns.
-After extracting these columns, they are given the correct names, taken from `features.txt`.
 
-##### Step 3 - Use descriptive activity names to name the activities in the data set
+###### Step 3 - Use descriptive activity names to name the activities in the data set
 
-Merge data subset with the activity data table to include the descriptive activity names
+Merge data subset with the activity data table to include the descriptive activity names.
 
-##### Step 4 - Appropriately label the data set with descriptive activity names
+###### Step 4 - Appropriately label the data set with descriptive activity names
 
 Use gsub function for pattern replacement to clean up the data labels.
 
-##### Step 5 - Create a second, independent tidy data set with the average of each variable for each activity and each subject
+###### Step 5 - Create a second, independent tidy data set with the average of each variable for each activity and each subject
 
 Generate a new dataset with all the average measures for each subject and activity type (30 subjects * 6 activities = 180 rows).
 
